@@ -5,11 +5,11 @@ html {
     padding: 0px;
     text-align: center;
     background-color: #fecd51;
-
+    min-height: 100%;
+    position: relative;
 }
 
 nav ul li {
-    /* Menu horizontal */
     align-items: center;
     display: flex;
     height: auto;
@@ -27,7 +27,6 @@ nav ul {
 }
 
 nav ul li a {
-    /* Menu horizontal */
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -36,30 +35,13 @@ nav ul li a {
     border-radius: 10px;
     font-weight: bold;
     font-size: 14px;
-
 }
 
 nav ul li a:hover {
-    /* Menu horizontal */
     background-color:  #fecd51;
     color: #000000;
     font-weight: bold;
     font-size: 14px;
-}
-
-nav ul li ul {
-    /* Menu horizontal */
-    display: none;
-    position: absolute;
-    background-color: #000;
-    color: #fff;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li:hover ul {
-    /* Menu horizontal */
-    display: block;
 }
 
 footer {
@@ -67,9 +49,9 @@ footer {
     background: #ff7676;
     color: #000000;
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position:fixed;
+    left:0px;
+    bottom:0px;
     margin: 0;
     padding: 0;
     font-size: 12px;
@@ -99,8 +81,6 @@ form {
     display: inline-block;
     font-weight: bold;
     font-size: 14px;
-
-
 }
 
 input[type="text" i] {
@@ -108,13 +88,12 @@ input[type="text" i] {
     width: 300px;
     height: 20px;
     border: 3px solid #466c95;
-    border-radius: 3px;
+    -o-border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    border-radius: 3px;
     font-weight: bold;
-
 }
 
 input[type="email" i] {
@@ -122,13 +101,12 @@ input[type="email" i] {
     width: 300px;
     height: 20px;
     border: 3px solid #466c95;
-    border-radius: 3px;
+    -o-border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    border-radius: 3px;
     font-weight: bold;
-
 }
 
 textarea {
@@ -136,13 +114,12 @@ textarea {
     width: 300px;
     height: 100px;
     border: 3px solid #466c95;
-    border-radius: 3px;
+    -o-border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    border-radius: 3px;
     font-weight: bold;
-
 }
 
 button.btn.btn-primary {
@@ -150,18 +127,17 @@ button.btn.btn-primary {
     height: 30px;
     border: 5px solid #5dae8b;
     margin-bottom: 5px;
-    border-radius: 5px;
+    -o-border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    border-radius: 5px;
     background-color: #5dae8b;
     font-weight: bold;
     margin-top: 10px;
 }
 
-
-.misColores {
+/* .misColores {
     #2f1b41;
     #9f1e49;
     #fecd51;
@@ -170,4 +146,32 @@ button.btn.btn-primary {
     #f6f49d;
     #5dae8b;
     #466c95;
+} */
+
+/* Toggle button dark light */
+
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.toggle span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.toggle span:nth-child(2) {
+    opacity: 0;
 }
