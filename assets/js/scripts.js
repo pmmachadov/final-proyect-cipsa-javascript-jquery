@@ -58,22 +58,12 @@ $(document).ready(function () {
   // Datepicker
   $('#datepicker').datepicker()
 
- 
-
- 
-
- 
-  // Parrafos desplegables
+   // Parrafos desplegables
   $('#parrafos').accordion({
     collapsible: true,
     active: false,
     heightStyle: 'content',
   })
 
-  // Responsive video gallery
   
-
-
-  // Video gallery
- 
-  
+})
