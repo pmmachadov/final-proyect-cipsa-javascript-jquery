@@ -10,6 +10,23 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+iframe {
+    -o-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    border-radius: 8px;
 }
 
 nav ul li {
@@ -159,3 +176,5 @@ button.btn.btn-primary {
 
 /* video gallery */
 
+
+/* video gallery */

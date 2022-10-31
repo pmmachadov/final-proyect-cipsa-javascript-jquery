@@ -74,6 +74,6 @@ $(document).ready(function () {
   
 
 
-  // Responsive video gallery
-
-})
+  // Video gallery
+ 
+  
