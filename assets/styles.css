@@ -4,14 +4,22 @@ html {
     margin: 0px;
     padding: 0px;
     text-align: center;
-    background-color: #fecd51;
     height: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+
 }
+/* Imagen de fondo del body */
+body {
+    background-image: url(../assets/images/VincentVanGogh2.webp);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    }
 
 header {
     display: flex;
@@ -19,7 +27,6 @@ header {
     flex-wrap: wrap;
     width: 100%;
 }
-
 
 iframe {
     -o-border-radius: 8px;
@@ -173,8 +180,6 @@ button.btn.btn-primary {
     #5dae8b;
     #466c95;
 } */
-
-
 
 .images {
     display: grid;
