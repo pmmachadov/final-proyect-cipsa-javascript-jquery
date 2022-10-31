@@ -126,7 +126,7 @@ $(document).ready(function () {
         "https://picsum.photos/200/300?random=5",
     ];
 
-    const i = 0;
+    i = 0;
     setInterval(function () {
         $("#fotos").attr("src", fotos[i]);
         i++;
