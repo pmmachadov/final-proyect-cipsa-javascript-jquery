@@ -12,8 +12,11 @@ $(document).ready(function () {
         .slideUp()
     }
   )
+})
 
   // Slider con link a 5 fotos de la web
+$(document).ready(function () {
+
   $('#slider').slider({
     animate: true,
     value: 1,
@@ -28,8 +31,11 @@ $(document).ready(function () {
       )
     }
   })
+})
 
   // Formulario
+$(document).ready(function () {
+
   $('#form').submit(function (e) {
     e.preventDefault()
     let nombre = $('#nombre').val()
@@ -48,22 +54,42 @@ $(document).ready(function () {
     )
     $('.msg').slideDown()
   })
-
+})
   // Tabs
+$(document).ready(function () {
+
   $('#tabs').tabs()
+})
 
   // Accordion
+
+$(document).ready(function () {
+
   $('#accordion').accordion()
 
+})
+
+  
+
   // Datepicker
+$(document).ready(function () {
+
   $('#datepicker').datepicker()
 
+})
+
+
+
    // Parrafos desplegables
+$(document).ready(function () {
+
   $('#parrafos').accordion({
     collapsible: true,
     active: false,
     heightStyle: 'content',
   })
-
-  
 })
+
+// Photo carousel
+
+
