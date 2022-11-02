@@ -116,6 +116,19 @@ form {
     display: inline-block;
     font-weight: bold;
     font-size: 14px;
+    background-color: #466c95;
+    color: #fff;
+    -o-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+}
+
+button.btn.btn-primary:hover {
+    background-color: #fecd51;
+    border: #fecd51;
+
 }
 
 input[type="text" i] {
