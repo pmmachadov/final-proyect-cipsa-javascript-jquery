@@ -26,6 +26,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
+    text-align: center;
 }
 
 iframe {
@@ -256,3 +257,27 @@ body {
 	place-items: center;
 	background: linear-gradient(to bottom right, #000a35, #001368, #000c3f, #000416);
 }
+
+/* Photo carousel index principal*/
+
+.slider {
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: block;
+    width: 900px;
+    height: 400px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    .slide {
+        float: left;
+        height: 400px;
+        width: 900px;
+    }
