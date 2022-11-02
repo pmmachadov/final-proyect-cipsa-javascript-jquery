@@ -204,3 +204,10 @@ button.btn.btn-primary {
     -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
+
+.video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
