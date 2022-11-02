@@ -4,13 +4,13 @@ html {
     margin: 0px;
     padding: 0px;
     text-align: center;
-    height: 100%;
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
+    min-height: 100%;
+    max-width: 100%;
 }
 
 /* Imagen de fondo del body */
@@ -74,20 +74,20 @@ nav ul li a:hover {
 }
 
 footer {
-    height: 45px;
-    background: #ff7676;
+    height: 100px;
+    background:  #9f1e49;
     color: #000000;
     width: 100%;
-    position: relative;
     left: 0px;
-    bottom: 0px;
     margin: 0;
-    padding: 0;
     font-size: 12px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    bottom: 0;
+    position: absolute;
+   
 }
 
 footer p {
@@ -100,6 +100,12 @@ footer h3 {
     font-size: 1.17em;
     margin: 0px;
     font-weight: bold;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
 }
 
 /* Form */
@@ -123,12 +129,12 @@ form {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     border-radius: 20px;
+    margin-bottom: 120px;
 }
 
 button.btn.btn-primary:hover {
     background-color: #fecd51;
     border: #fecd51;
-
 }
 
 input[type="text" i] {
