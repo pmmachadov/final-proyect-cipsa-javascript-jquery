@@ -38,10 +38,10 @@ $(document).ready(function () {
 
   $('#form').submit(function (e) {
     e.preventDefault()
-    let nombre = $('#nombre').val()
-    let email = $('#email').val()
-    let telefono = $('#telefono').val()
-    let mensaje = $('#mensaje').val()
+    const nombre = $('#nombre').val()
+    const email = $('#email').val()
+    const telefono = $('#telefono').val()
+    const mensaje = $('#mensaje').val()
     $('.msg').text(
       'Nombre: ' +
         nombre +
@@ -90,24 +90,19 @@ $(document).ready(function () {
   })
 })
 
+
 // Photo carousel del index paina principal
 
+let slideIndex = 0; // 0 es el valor inicial
+showSlides(); 
 
-let currentSlide = 1;
-let $slider = $('.slides');
-let slideCount = $slider.children().length;
-let slideTime = 2000;
-let animationTime = 800;
-console.log(slideCount);
-
-setInterval (function () {
-  $slider.animate({
-    marginLeft: '-=900px'
-  }, animationTime, function () {
-    currentSlide++;
-    if (currentSlide === slideCount) {
-      currentSlide = 1;
-      $(this).css('margin-left', "0px");
-    }
-  });
-}, slideTime);
+function showSlides() { 
+  let i; 
+  let slides = document.getElementsByClassName("mySlides"); // Selecciona todos los elementos con la clase mySlides
+  for (i = 0; i < slides.length; i++) { // Recorre todos los elementos con la clase mySlides
+  slides[i].style.display = "none"; // Oculta todos los elementos con la clase mySlides
+  }
+  slideIndex++; // Incrementa el valor de slideIndex en 1
+  if (slideIndex > slides.length) {slideIndex = 1} // Si slideIndex es mayor que el número de elementos con la clase mySlides, slideIndex vuelve a ser 1
+  setTimeout(showSlides, 2000);
+}
