@@ -90,6 +90,31 @@ $(document).ready(function () {
   })
 })
 
+// Photo gallery
+
+
+ // Crear efecto de movimiento zoom in and out when hovering en las imagenes
+ const images = document.querySelectorAll('.image-box');
+ const container = document.querySelector('.container');
+
+ images.forEach(image => {
+     image.addEventListener('mousemove', (e) => {
+         let xAxis = (window.innerWidth / 2 - e.pageX) / 0;
+         let yAxis = (window.innerHeight / 2 - e.pageY) / 0;
+         image.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+     });
+
+     image.addEventListener('mouseenter', e => { // cuando el mouse entra a la imagen
+         image.style.transition = "all 3.0s ease"; // tiempo de transicion
+            });
+
+     image.addEventListener('mouseleave', e => { // cuando el mouse sale de la imagen
+         image.style.transition = "all 3.0s ease"; // tiempo de transicion
+
+     });
+ });
+
+
 
 // Photo carousel del index paina principal
 
@@ -106,3 +131,4 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1} // Si slideIndex es mayor que el número de elementos con la clase mySlides, slideIndex vuelve a ser 1
   setTimeout(showSlides, 2000);
 }
+
