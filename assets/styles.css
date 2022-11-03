@@ -12,7 +12,7 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     min-height: 100%;
-    max-width: 100%;
+    min-width: 100%;
 }
 
 /* Imagen de fondo del body */
