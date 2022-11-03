@@ -204,6 +204,13 @@ button.btn.btn-primary {
     #466c95;
 } */
 
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
 /* Photo carousel */
 
 * {box-sizing:border-box}
