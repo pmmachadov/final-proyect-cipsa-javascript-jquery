@@ -78,8 +78,6 @@ $(document).ready(function () {
 
 })
 
-
-
 // Parrafos desplegables
 $(document).ready(function () {
 
@@ -89,9 +87,6 @@ $(document).ready(function () {
     heightStyle: 'content',
   })
 })
-
-// Photo gallery
-
 
 // Crear efecto de movimiento zoom in and out when hovering en las imagenes
 const images = document.querySelectorAll('.image-box');
