@@ -18,10 +18,9 @@
 body,
 html {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  justify-content: center;
   margin: 0px;
   max-height: 100%;
   max-width: 100%;
@@ -29,6 +28,7 @@ html {
   position: relative;
   text-align: center;
   background-color: #000;
+  justify-content: center;
 }
 
 header {
@@ -80,7 +80,8 @@ nav ul li a:hover {
   color: #000000;
   font-size: 14px;
   font-weight: bold;
-  /*transformenlargewidthonly*/-o-transform: scale(1.5);
+  /*transformenlargewidthonly*/
+  -o-transform: scale(1.5);
   -o-transition: all 0.3s ease-in-out;
   -webkit-transform: scale(1.15);
   -moz-transform: scale(1.5);
@@ -93,7 +94,7 @@ nav ul li a:hover {
 }
 
 nav ul li a:active {
-  background-color:  #5dae8b;
+  background-color: #5dae8b;
   color: #000000;
   font-size: 14px;
   font-weight: bold;
@@ -114,37 +115,11 @@ h1 {
 
 .navbar__logo {
   display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 main {
   display: flex;
@@ -190,6 +165,8 @@ form {
   margin-bottom: 120px;
   padding: 1em;
   width: 350px;
+  height: auto;
+  margin-top: 50px;
 }
 
 button.btn.btn-primary:hover {
