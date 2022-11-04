@@ -134,10 +134,16 @@ function showSlides() {
 
 // nav ul li a movement effect hover jquery
 
-$(document).ready(function(){
+$(document).ready(function () {
+  $(".navbar__menu").hover(function () {
+      $(".mov").animate({
+          width: "150%",
 
-  $("li").hover(function(){
-      $("btn-class-off-hover").toggleClass("btn-class-on-hover");  //Toggle the active class to the area is hovered
+      }, 250);
+  }, function () {
+      $(".mov").animate({
+          width: "100%",
+
+      }, 250);
   });
-
 });

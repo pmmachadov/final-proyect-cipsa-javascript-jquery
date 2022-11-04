@@ -80,24 +80,36 @@ nav ul li a:hover {
   color: #000000;
   font-size: 14px;
   font-weight: bold;
+  /*transformenlargewidthonly*/-o-transform: scale(1.5);
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.btn-class-on-hover {
-  background-color: #fecd51;
+nav ul li a:active {
+  background-color:  #5dae8b;
   color: #000000;
   font-size: 14px;
   font-weight: bold;
-  width: 130%;
 }
 
-.btn-class-off-hover {
-  background-color: #fecd51;
-  color: #000000;
-  font-size: 14px;
-  font-weight: bold;
-  width: 100%;
+  /* -o-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; */
 }
-
 
 
 
