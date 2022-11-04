@@ -14,7 +14,7 @@ $(document).ready(function () {
   )
 })
 
-  // Slider con link a 5 fotos de la web
+// Slider con link a 5 fotos de la web
 $(document).ready(function () {
 
   $('#slider').slider({
@@ -33,7 +33,7 @@ $(document).ready(function () {
   })
 })
 
-  // Formulario
+// Formulario
 $(document).ready(function () {
 
   $('#form').submit(function (e) {
@@ -44,24 +44,24 @@ $(document).ready(function () {
     const mensaje = $('#mensaje').val()
     $('.msg').text(
       'Nombre: ' +
-        nombre +
-        ' Email: ' +
-        email +
-        ' Telefono: ' +
-        telefono +
-        ' Mensaje: ' +
-        mensaje
+      nombre +
+      ' Email: ' +
+      email +
+      ' Telefono: ' +
+      telefono +
+      ' Mensaje: ' +
+      mensaje
     )
     $('.msg').slideDown()
   })
 })
-  // Tabs
+// Tabs
 $(document).ready(function () {
 
   $('#tabs').tabs()
 })
 
-  // Accordion
+// Accordion
 
 $(document).ready(function () {
 
@@ -69,9 +69,9 @@ $(document).ready(function () {
 
 })
 
-  
 
-  // Datepicker
+
+// Datepicker
 $(document).ready(function () {
 
   $('#datepicker').datepicker()
@@ -80,7 +80,7 @@ $(document).ready(function () {
 
 
 
-   // Parrafos desplegables
+// Parrafos desplegables
 $(document).ready(function () {
 
   $('#parrafos').accordion({
@@ -93,42 +93,51 @@ $(document).ready(function () {
 // Photo gallery
 
 
- // Crear efecto de movimiento zoom in and out when hovering en las imagenes
- const images = document.querySelectorAll('.image-box');
- const container = document.querySelector('.container');
+// Crear efecto de movimiento zoom in and out when hovering en las imagenes
+const images = document.querySelectorAll('.image-box');
+const container = document.querySelector('.container');
 
- images.forEach(image => {
-     image.addEventListener('mousemove', (e) => {
-         let xAxis = (window.innerWidth / 2 - e.pageX) / 0;
-         let yAxis = (window.innerHeight / 2 - e.pageY) / 0;
-         image.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-     });
+images.forEach(image => {
+  image.addEventListener('mousemove', (e) => {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 0;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 0;
+    image.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  });
 
-     image.addEventListener('mouseenter', e => { // cuando el mouse entra a la imagen
-         image.style.transition = "all 3.0s ease"; // tiempo de transicion
-            });
+  image.addEventListener('mouseenter', e => { // cuando el mouse entra a la imagen
+    image.style.transition = "all 3.0s ease"; // tiempo de transicion
+  });
 
-     image.addEventListener('mouseleave', e => { // cuando el mouse sale de la imagen
-         image.style.transition = "all 3.0s ease"; // tiempo de transicion
+  image.addEventListener('mouseleave', e => { // cuando el mouse sale de la imagen
+    image.style.transition = "all 3.0s ease"; // tiempo de transicion
 
-     });
- });
+  });
+});
 
 
 
 // Photo carousel del index paina principal
 
 let slideIndex = 0; // 0 es el valor inicial
-showSlides(); 
+showSlides();
 
-function showSlides() { 
-  let i; 
+function showSlides() {
+  let i;
   let slides = document.getElementsByClassName("mySlides"); // Selecciona todos los elementos con la clase mySlides
   for (i = 0; i < slides.length; i++) { // Recorre todos los elementos con la clase mySlides
-  slides[i].style.display = "none"; // Oculta todos los elementos con la clase mySlides
+    slides[i].style.display = "none"; // Oculta todos los elementos con la clase mySlides
   }
   slideIndex++; // Incrementa el valor de slideIndex en 1
-  if (slideIndex > slides.length) {slideIndex = 1} // Si slideIndex es mayor que el número de elementos con la clase mySlides, slideIndex vuelve a ser 1
+  if (slideIndex > slides.length) { slideIndex = 1 } // Si slideIndex es mayor que el número de elementos con la clase mySlides, slideIndex vuelve a ser 1
   setTimeout(showSlides, 2000);
 }
 
+// nav ul li a movement effect hover jquery
+
+$(document).ready(function(){
+
+  $("li").hover(function(){
+      $("btn-class-off-hover").toggleClass("btn-class-on-hover");  //Toggle the active class to the area is hovered
+  });
+
+});
