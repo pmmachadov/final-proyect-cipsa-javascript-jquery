@@ -18,7 +18,7 @@
 body,
 html {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 0px;
@@ -138,10 +138,11 @@ footer {
   justify-content: center;
   left: 0;
   margin: 0px;
-  padding: 0px;
+  margin-top: 300px;
   position: relative;
   text-align: center;
   width: 100%;
+}
 }
 
 /* Form */
@@ -383,4 +384,10 @@ button.btn.btn-primary {
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
+}
+
+.socials img {
+  height: 50px;
+  margin: 10px;
+  width: 50px;
 }
