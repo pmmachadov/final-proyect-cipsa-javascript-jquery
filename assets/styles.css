@@ -11,13 +11,14 @@ html {
   flex-direction: row;
   flex-wrap: wrap;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: 0px;
   max-height: 100%;
   max-width: 100%;
   padding: 0px;
   position: relative;
   text-align: center;
+  align-items: center;
 }
 
 header {
@@ -441,6 +442,21 @@ button.btn.btn-primary {
 
 #slide15 {
   background-image: url('./images/image15.jpg');
+}
+
+.map {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*Mobile Devices*/
