@@ -1,0 +1,10 @@
+Esta es la paleta de colores seleccionada:
+
+    #2f1b41;
+    #9f1e49;
+    #fecd51;
+    #f2f2f2;
+    #ff7676;
+    #f6f49d;
+    #5dae8b;
+    #466c95;

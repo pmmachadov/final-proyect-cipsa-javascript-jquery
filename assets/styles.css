@@ -137,6 +137,19 @@ footer {
   height: max-content;
 }
 
+.ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active {
+  display: block;
+  height: auto;
+}
+
+.lastAccordionParagraph {
+  margin-bottom: 50px;
+}
+
+p {
+  text-align: justify;
+}
+
 form {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
