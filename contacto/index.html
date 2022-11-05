@@ -5,11 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/styles.css"/>
-    <link rel="stylesheet" href="../assets/jquery-ui.css"/>
+    <link rel="stylesheet" href="../assets/styles.css" />
+    <link rel="stylesheet" href="../assets/jquery-ui.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-        <script src="../assets/js/scripts.js"></script>
+    <script src="../assets/js/scripts.js"></script>
     <title>CIPSA Proyecto Final - javascript - jQuery - jQuery ui</title>
 </head>
 
@@ -17,12 +17,11 @@
     <header>
         <nav class="navbar">
             <div class="navbar__logo">
-              <!-- titulo de la pagina-->
-              <h1>Vincent van Gogh</h1>
-
-              <a href="index.html">
-                  <img class="logo" src="../assets/images/logo.webp" alt="logo" />
-              </a>
+                <!-- titulo de la pagina-->
+                <h1>Vincent van Gogh</h1>
+                <a href="index.html">
+                    <img class="logo" src="../assets/images/logo.webp" alt="logo" />
+                </a>
             </div>
             <div class="navbar__menu">
                 <ul>
@@ -34,41 +33,36 @@
                 </ul>
             </div>
         </nav>
-
     </header>
-     
     <!-- Toggle button dark light-->
-    <div class="toggle">
-        <span></span>
+    <section>
+        <div class="toggle">
+            <span></span>
         </div>
-
-    <form id="form">
-        <div class="form-group">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" class="form-control" />
-        </div>
-        <div class="form-group
+        <form id="form">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" />
+            </div>
+            <div class="form-group
                     <label for=" email">Email</label>
-            <input type="email" id="email" name="email" class="form-control" />
-        </div>
-        <div class="form-group
+                <input type="email" id="email" name="email" class="form-control" />
+            </div>
+            <div class="form-group
                     <label for=" telefono">Telefono</label>
-            <input type="text" id="telefono" name="telefono" class="form-control" />
-        </div>
-        <!-- Datepicker jquery class="datepicker" -->
-        <p>Date: <input type="text" id="datepicker" placeholder="Date"></p>
-
-        <div class="form-group
+                <input type="text" id="telefono" name="telefono" class="form-control" />
+            </div>
+            <div class="form-group
+                    <label for=" mensaje">Fecha de nacimiento</label>
+                <div><input type="text" id="datepicker"></div>
+                <div class="form-group
                     <label for=" mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" class="form-control"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-    <div class="msg"></div>
-
-
-
-
+                    <textarea id="mensaje" name="mensaje" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div class="msg"></div>
+    </section>
     <footer>
         <div class="footer-content">
             <div class="footer-section about">
@@ -84,11 +78,9 @@
                         <a href="#"><img src="../assets/images/facebook.jpg" alt="Facebook"></a>
                         <a href="#"><img src="../assets/images/instagram.png" alt="Instagram"></a>
                         <a href="#"><img src="../assets/images/twitter.jpg" alt="Twitter"></a>
-               
-                </div>
+                    </div>
                 </div>
     </footer>
-
 </body>
 
 </html>

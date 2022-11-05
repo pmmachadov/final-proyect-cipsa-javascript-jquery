@@ -134,7 +134,7 @@ $(document).ready(function(){
   var pauseInterval = false;
 
   // set an interval for the slide to run on
-  var interval = window.setInterval(rotateSlides, 3000) // Duration until slide changes (3sec)
+  var interval = window.setInterval(rotateSlides, 2000) // Duration until slide changes (3sec)
 
   function rotateSlides(){
     // Get the first slide and store it
@@ -176,7 +176,7 @@ $(document).ready(function(){
     // Animate to the previous slide
     $previousSlide.animate({marginLeft: 0}, 1000, function(){
       // Resume the interval
-      interval = window.setInterval(rotateSlides, 3000);
+      interval = window.setInterval(rotateSlides, 2000);
     });
   }
 
@@ -195,7 +195,7 @@ $(document).ready(function(){
       // Reset slide position to the end of the queue
       $currentSlide.css({marginLeft: 0})
       // Resume the interval
-      interval = window.setInterval(rotateSlides, 3000);
+      interval = window.setInterval(rotateSlides, 2000);
     });
   }
 
