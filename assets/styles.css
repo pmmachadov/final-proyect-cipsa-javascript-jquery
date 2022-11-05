@@ -1,14 +1,3 @@
-/* .misColores {
-    #2f1b41;
-    #9f1e49;
-    #fecd51;
-    #f2f2f2;
-    #ff7676;
-    #f6f49d;
-    #5dae8b;
-    #466c95;
-    } */
-
 * {
   margin: 0;
   padding: 0;
@@ -138,11 +127,9 @@ footer {
   justify-content: center;
   left: 0;
   margin: 0px;
-  margin-top: 300px;
   position: relative;
   text-align: center;
   width: 100%;
-}
 }
 
 /* Form */
@@ -360,12 +347,12 @@ button.btn.btn-primary {
   height: 300px;
   margin: 10px;
   overflow: hidden;
-  transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
   width: 300px;
   -webkit-transition: all 1.5s ease;
   -moz-transition: all 1.5s ease;
   -ms-transition: all 1.5s ease;
-  -o-transition: all 1.5s ease;
+  transition: all 1.5s ease;
 }
 
 .image-box img {
@@ -391,4 +378,123 @@ button.btn.btn-primary {
   height: 50px;
   margin: 10px;
   width: 50px;
+}
+
+/* Carousel pagina principal */
+
+#carousel {
+  /*Set the container carousel to be fullscreen. If you change the size
+  of your carousel make sure to also change the size of your slides*/
+  height: 100vh;
+  width: 100vw;
+  /*Prevent images from wrapping*/
+  white-space: nowrap;
+  overflow: hidden;
+  /*Allow children to be positioned relatively*/
+  position: relative;
+  margin-top: 50px;
+}
+
+.slide-image {
+  /*Make the image container full screen*/
+  width: 100vw;
+  height: 100vh;
+  /*Make the image cover the the screen and center it*/
+  background-position: center;
+  background-size: cover;
+  /*Make images inline with each other*/
+  display: inline-block;
+}
+
+.arrow {
+  width: 5%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#right-arrow {
+  right: 20px;
+}
+
+#left-arrow {
+  left: 20px;
+}
+
+#slide1 {
+  background-image: url('./images/image1.jpg');
+}
+
+#slide2 {
+  background-image: url('./images/image2.jpg');
+}
+
+#slide3 {
+  background-image: url('./images/image3.jpg');
+}
+
+#slide4 {
+  background-image: url('./images/image4.webp');
+}
+#slide5 {
+  background-image: url('./images/image5.jpg');
+}
+
+#slide6 {
+  background-image: url('./images/image6.jpg');
+}
+
+#slide7 {
+  background-image: url('./images/image7.jpg');
+}
+
+#slide8 {
+  background-image: url('./images/image8.jpg');
+}
+
+#slide9 {
+  background-image: url('./images/image9.jpg');
+}
+
+#slide10 {
+  background-image: url('./images/image10.jpg');
+}
+
+#slide11 {
+  background-image: url('./images/image11.jpg');
+}
+
+#slide12 {
+  background-image: url('./images/image12.jpg');
+}
+
+#slide13 {
+  background-image: url('./images/image13.jpg');
+}
+
+#slide14 {
+  background-image: url('./images/image14.jpg');
+}
+
+#slide15 {
+  background-image: url('./images/image15.jpg');
+}
+
+
+
+
+
+/*Mobile Devices*/
+@media (max-device-width: 1024px) {
+  .arrow {
+    width: 20%;
+  }
+}
+
+/*Small Browsers*/
+@media (max-width: 768px) {
+  .arrow {
+    width: 10%;
+  }
 }
