@@ -6,6 +6,7 @@
 
 body,
 html {
+  align-items: center;
   background-color: #000;
   display: flex;
   flex-direction: row;
@@ -18,7 +19,6 @@ html {
   padding: 0px;
   position: relative;
   text-align: center;
-  align-items: center;
 }
 
 header {
@@ -80,8 +80,6 @@ nav ul li a:hover {
   font-weight: bold;
   transform: scale(1.5);
   transition: all 0.3s ease-in-out;
-
-  /*transformenlargewidthonly*/
 }
 
 nav ul li a:active {
@@ -117,27 +115,6 @@ main {
   flex-direction: column;
 }
 
-footer {
-  align-items: center;
-  background-color: #5dae8b;
-  bottom: 0;
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-size: 12px;
-  justify-content: center;
-  left: 0;
-  margin-top: 50px;
-  margin: 0px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-
-  /* footer at the bottom of  the page */
-}
-
-/* Form */
 #accordion {
   height: max-content;
 }
@@ -350,10 +327,6 @@ button.btn.btn-primary {
   white-space: nowrap;
   width: 90vw;
 
-  /*Set the container carousel to be fullscreen. If you change the size
-  of your carousel make sure to also change the size of your slides*/
-  /*Prevent images from wrapping*/
-  /*Allow children to be positioned relatively*/
 }
 
 .slide-image {
@@ -362,10 +335,6 @@ button.btn.btn-primary {
   display: inline-block;
   height: 100vh;
   width: 100vw;
-
-  /*Make the image container full screen*/
-  /*Make the image cover the the screen and center it*/
-  /*Make images inline with each other*/
 }
 
 .arrow {
@@ -445,18 +414,36 @@ button.btn.btn-primary {
 }
 
 .map {
-  position: relative;
-  padding-bottom: 75%;
   height: 0;
   overflow: hidden;
+  padding-bottom: 75%;
+  position: relative;
 }
 
 .map iframe {
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
+}
+
+footer {
+  align-items: center;
+  background-color: #5dae8b;
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 12px;
+  justify-content: center;
+  left: 0;
+  margin-top: 50px;
+  margin: 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 /*Mobile Devices*/

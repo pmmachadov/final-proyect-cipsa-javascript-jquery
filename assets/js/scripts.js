@@ -14,26 +14,6 @@ $(document).ready(function () {
   )
 })
 
-// Slider con link a 5 fotos de la web
-$(document).ready(function () {
-  $('#slider').slider({
-    animate: true,
-    value: 1,
-    min: 1,
-    max: 5,
-    step: 1,
-    slide: function (event, ui) {
-      $('#sliderValue').html(ui.value)
-      $('#sliderValue').attr(
-        'href',
-        'https://picsum.photos/200/300?random=' + ui.value
-      )
-    }
-  })
-})
-
-
-
 // Formulario
 $(document).ready(function () {
 
@@ -105,53 +85,41 @@ images.forEach(image => {
   });
 });
 
-
-
-
-
-
 // nav ul li a movement effect hover jquery
 
 $(document).ready(function () {
   $(".navbar__menu").hover(function () {
-      $(".mov").animate({
-          width: "150%",
+    $(".mov").animate({
+      width: "150%",
 
-      }, 250);
+    }, 250);
   }, function () {
-      $(".mov").animate({
-          width: "100%",
+    $(".mov").animate({
+      width: "100%",
 
-      }, 250);
+    }, 250);
   });
 });
 
-
 // Photo carousel del index paina principal
 
-
-$(document).ready(function(){
-  var pauseInterval = false;
-
+$(document).ready(function () {
+  let pauseInterval = false;
   // set an interval for the slide to run on
-  var interval = window.setInterval(rotateSlides, 2000) // Duration until slide changes (3sec)
-
-  function rotateSlides(){
+  let interval = window.setInterval(rotateSlides, 2000) // Duration until slide changes (3sec)
+  function rotateSlides() {
     // Get the first slide and store it
-    var $firstSlide = $('#carousel').find('div:first');
-
+    let $firstSlide = $('#carousel').find('div:first');
     // Get the width of the slide so we know how much to slide by
-    var width = $firstSlide.width();
-
+    let width = $firstSlide.width();
     // Animate the first slide to move to the left the length of the
     // width. Set 1000 (1sec) to be the length of the slide transition.
-    $firstSlide.animate({marginLeft: -width}, 1000, function(){
+    $firstSlide.animate({ marginLeft: -width }, 1000, function () {
       // Reorder slides - move the $firstSlide after the last slide
-      var $lastSlide = $('#carousel').find('div:last')
+      let $lastSlide = $('#carousel').find('div:last')
       $lastSlide.after($firstSlide);
-
       // Reset slide position to the end of the queue
-      $firstSlide.css({marginLeft: 0})
+      $firstSlide.css({ marginLeft: 0 })
     });
   }
 
@@ -161,42 +129,41 @@ $(document).ready(function(){
   // Listen for click on slide image
   $('.slide-image').click(nextSlide);
 
-  function previousSlide(){
+  function previousSlide() {
     // Stop the interval from running
     window.clearInterval(interval);
     // Get the current slide
-    var $currentSlide = $('#carousel').find('div:first');
+    let $currentSlide = $('#carousel').find('div:first');
     // Get the width of the slide so we know how much to slide by
-    var width = $currentSlide.width();
+    let width = $currentSlide.width();
     // Get the previous slide
-    var $previousSlide = $('#carousel').find('div:last')
+    let $previousSlide = $('#carousel').find('div:last')
     // Move the previous slide's positition to the front of the queue
-    $previousSlide.css({marginLeft: -width})
+    $previousSlide.css({ marginLeft: -width })
     $currentSlide.before($previousSlide);
     // Animate to the previous slide
-    $previousSlide.animate({marginLeft: 0}, 1000, function(){
+    $previousSlide.animate({ marginLeft: 0 }, 1000, function () {
       // Resume the interval
       interval = window.setInterval(rotateSlides, 2000);
     });
   }
 
-  function nextSlide(){
+  function nextSlide() {
     // Stop the interval from running
     window.clearInterval(interval);
     // Get the current slide
-    var $currentSlide = $('#carousel').find('div:first');
+    let $currentSlide = $('#carousel').find('div:first');
     // Get the width of the slide so we know how much to slide by
-    var width = $currentSlide.width();
+    let width = $currentSlide.width();
     // Animate to the next slide
-    $currentSlide.animate({marginLeft: -width}, 1000, function(){
+    $currentSlide.animate({ marginLeft: -width }, 1000, function () {
       // Reorder slides - move the $firstSlide after the last slide
-      var $lastSlide = $('#carousel').find('div:last')
+      let $lastSlide = $('#carousel').find('div:last')
       $lastSlide.after($currentSlide);
       // Reset slide position to the end of the queue
-      $currentSlide.css({marginLeft: 0})
+      $currentSlide.css({ marginLeft: 0 })
       // Resume the interval
       interval = window.setInterval(rotateSlides, 2000);
     });
   }
-
 });
